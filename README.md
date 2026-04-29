@@ -7,6 +7,9 @@
 
 ---
 
+service is live at 🎉: https://magicpin-vera-ai.onrender.com
+
+---
 ## 🚀 The Approach: The 4-Context Engine
 Vera isn't just a chatbot; she is a sophisticated **Merchant Relationship Manager**. Every message she composes is grounded in four distinct layers of intelligence:
 
