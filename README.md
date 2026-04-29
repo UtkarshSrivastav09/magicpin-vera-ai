@@ -1,5 +1,4 @@
 # 💠 Vera Merchant AI Assistant
-### *magicpin AI Challenge — Premium Submission*
 
 ---
 
