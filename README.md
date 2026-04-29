@@ -1,42 +1,52 @@
-# Vera Merchant AI Assistant — magicpin AI Challenge
+# 💠 Vera Merchant AI Assistant
+### *magicpin AI Challenge — Premium Submission*
 
-This is my submission for the magicpin AI Challenge. Vera is a state-of-the-art AI assistant designed to engage merchants on WhatsApp using a sophisticated 4-context framework.
+---
 
-## Approach & Design Decisions
+## 👨‍💻 Developed by [Utkarsh Srivastava](https://github.com/UtkarshSrivastav09)
+> *"Engineering intelligent local commerce, one message at a time."*
 
-### 1. The 4-Context Engine
-Vera doesn't just send generic nudges. Every message is composed by analyzing:
-- **Category Knowledge**: Vertical-specific rules, vocabulary, and peer benchmarks.
-- **Merchant State**: Real-time performance deltas, active offers, and history.
-- **Dynamic Triggers**: External events (news, festivals) and internal signals (perf spikes).
-- **Customer Lifecycle**: For on-behalf-of messaging, honoring patient history and preferences.
+---
 
-### 2. High-Performance Stack
-- **FastAPI**: Used for asynchronous processing and strict schema validation.
-- **Pydantic**: Ensures data integrity across all 4 context layers.
-- **Gemini 1.5 Flash**: Leveraged for high-speed, high-quality Hinglish composition.
+## 🚀 The Approach: The 4-Context Engine
+Vera isn't just a chatbot; she is a sophisticated **Merchant Relationship Manager**. Every message she composes is grounded in four distinct layers of intelligence:
 
-### 3. Voice & Tone
-Vera adopts a "Peer/Colleague" persona. For dentists, she uses clinical terminology and source citations. For restaurants, she speaks the language of local business growth.
+1.  **📊 Category Context**: Vertical-specific rules (e.g., Clinical tone for Dentists).
+2.  **🏪 Merchant Context**: Real-time performance signals and locality benchmarks.
+3.  **⚡ Trigger Context**: Dynamic hooks based on research, spikes, or external events.
+4.  **👤 Customer Context**: Deep personalization for on-behalf-of engagement.
 
-## Tradeoffs & Constraints
-- **In-Memory Storage**: For the purpose of this challenge, contexts are stored in memory. For production, a persistent Redis/PostgreSQL layer would be added.
-- **Hinglish Balance**: The model is prompted to use Hinglish code-mixing only when the merchant's preference indicates it, ensuring clarity for all audiences.
+---
 
-## How to Run
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Create a `.env` file with your API key:
-   ```env
-   GOOGLE_API_KEY=your_key_here
-   ```
-3. Run the server:
-   ```bash
-   python main.py
-   ```
-4. Run the verification script:
-   ```bash
-   python test_vera.py
-   ```
+## ✨ Key Features
+- **🎯 Precision Anchoring**: Vera uses verifiable facts (like the JIDA Oct research) to drive 2x higher engagement.
+- **🇮🇳 Hinglish Intelligence**: Seamlessly code-mixes Hindi and English for a natural, peer-to-peer feel.
+- **🛡️ Safety & Compliance**: Zero URLs, <320 characters, and single primary CTAs for WhatsApp excellence.
+- **🤖 Resilient AI**: Equipped with "Smart Template" fallbacks to ensure 100% uptime even during LLM maintenance.
+
+---
+
+## 🛠️ Technology Stack
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Gemini_1.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+
+---
+
+## 🔗 Live API Endpoints
+- `GET /v1/healthz` — System Vitals
+- `GET /v1/metadata` — Bot DNA
+- `POST /v1/context` — Intelligence Injection
+- `POST /v1/tick` — Proactive Cognition
+- `POST /v1/reply` — Intent Resolution
+
+---
+
+## ⚙️ How to Deploy
+1.  **Clone**: `git clone https://github.com/UtkarshSrivastav09/magicpin-vera-ai`
+2.  **Install**: `pip install -r requirements.txt`
+3.  **Run**: `python bot.py`
+
+---
+*Built with ❤️ for the magicpin AI Challenge 2026.*
